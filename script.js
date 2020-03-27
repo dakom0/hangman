@@ -17,7 +17,7 @@ let output2 = document.querySelector(".output2");
 let btn = document.querySelector("button");
 let img = document.querySelector("img");
 let clicks = -1;
-let pic = ["./0.jpg","./1.jpg","./2.jpg","./3.jpg","./4.jpg","./5.jpg","./6.jpg"]
+let pic = ["./img/0.jpg","./img/1.jpg","./img/2.jpg","./img/3.jpg","./img/4.jpg","./img/5.jpg","./img/6.jpg"]
 
 
 btn.addEventListener("click", function(){
@@ -106,6 +106,6 @@ function buildBoard(){
         div.addEventListener("click",handler);
         div.innerHTML = temp;
         output1.appendChild(div);  
-        img.src = pic[clicks];
+        img.src = pic[clicks]
+    };
     }
-}
