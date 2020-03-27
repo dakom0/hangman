@@ -47,7 +47,7 @@ function buildBoard(){
         div.myLetter = letter;
         output2.appendChild(div);
     });
-
+    confetti.stop()
     let solutionLetter = document.querySelectorAll(".letter2")
 
     
@@ -86,21 +86,26 @@ function buildBoard(){
             console.log("letterLeft "+letterLeft);
 
             if(letterLeft<1){
-                btn.style.display = "block";
-                alert("You Win!")
+                btn.style.display = "";
                 clicks = -1;
+                let body = document.querySelector("body");
+                confetti.start(5000)
+                setTimeout(function () {
+                    alert("You Win!");
+                }, 5000);
+                
             }
             if (clicks ==6) {
-                btn.style.display = "block";
+                btn.style.display = "";
                 alert("Try Again!")
                 clicks = -1; 
             }        
         } 
+
 
         div.addEventListener("click",handler);
         div.innerHTML = temp;
         output1.appendChild(div);  
         img.src = pic[clicks];
     }
-
 }
