@@ -4,6 +4,7 @@ body{
     margin: 0;
     width: 100%;
     height: 100%;
+    background-image: url(./blue-linear-gradient-black-1920x1080-c2-00bfff-000000-a-345-f-14.jpg);
 }
 .letter{
     display: inline-block;
@@ -13,6 +14,8 @@ body{
     margin-left: 10px;
     cursor: pointer;
     font-size: 1.5em;
+    background-color: black;
+    color: white;
 }
 
 .letter2{
@@ -20,12 +23,11 @@ body{
     padding: 5px;
     margin-left: 10px;
     font-size: 3em;
-
 }
 
 .done{
     cursor: default;
-    color: #ddd;
+    color: rgba(223, 217, 217, 0.418);
     border: 1px solid white;
 }
 
@@ -49,14 +51,14 @@ h1{
     bottom: 0;
     width: 100%;
     background-color: black;
-    opacity: 0.7;
+    text-align: center;
     color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     height: 50px;
   }
 button{
     font-size: large;
     margin: 50px;
+}
+img{
+    margin-top: 50px;
 }
