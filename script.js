@@ -92,7 +92,7 @@ function buildBoard(){
                 confetti.start(5000)
                 setTimeout(function () {
                     alert("You Win!");
-                }, 5000);
+                }, 2500);
                 
             }
             if (clicks ==6) {
